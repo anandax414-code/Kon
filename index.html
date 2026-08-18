@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Seven Scripts of Konkani — Timeline &amp; Map</title>
+<meta name="description" content="An interactive timeline and map of how Konkani has been written across the Konkan coast — Brahmi, Modi, Devanagari, Roman, Kannada, Malayalam and Perso-Arabic — with the communities, catalysts, and statistics behind each script." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=erode@400,500,600&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Kannada:wght@400;600;700&family=Noto+Sans+Malayalam:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<link href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <pattern id="grain-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="0.7" fill="currentColor" opacity="0.35" />
+      <circle cx="20" cy="14" r="0.5" fill="currentColor" opacity="0.25" />
+      <circle cx="32" cy="30" r="0.6" fill="currentColor" opacity="0.3" />
+      <circle cx="12" cy="34" r="0.4" fill="currentColor" opacity="0.2" />
+    </pattern>
+  </defs>
+</svg>
+
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a class="brand" href="#top" aria-label="Konkani Scripts, home">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+        <path d="M24 6 L24 42" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 15 Q24 8 39 15" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M9 33 Q24 40 39 33" stroke="currentColor" stroke-width="2" fill="none"/>
+        <circle cx="24" cy="24" r="4" fill="currentColor"/>
+      </svg>
+      <span class="brand__text">Konkani&nbsp;Scripts</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#timeline">Timeline</a>
+      <a href="#map">Map</a>
+      <a href="#scripts">Scripts</a>
+      <a href="#stats">Statistics</a>
+    </nav>
+    <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" type="button">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__pattern" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow">An interactive history</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">One language.</span>
+        <span class="hero__title-line hero__title-line--accent">Seven scripts.</span>
+      </h1>
+      <p class="hero__subtitle">
+        Konkani has been called the only Indian language with credible literature in half a dozen writing systems.
+        Trace how Brahmi, Modi, Devanagari, Roman, Kannada, Malayalam, and Perso-Arabic rose, competed, and receded
+        across Goa, coastal Karnataka, Kerala, and Maharashtra — from 2nd-century inscriptions to today's official-language disputes.
+      </p>
+      <div class="hero__scripts" role="list" aria-label="The seven scripts">
+        <span class="script-chip" style="--chip-color:#a1662f" role="listitem">ब्राह्मी</span>
+        <span class="script-chip" style="--chip-color:#8a5b3a" role="listitem">मोडी</span>
+        <span class="script-chip" style="--chip-color:#01696f" role="listitem">देवनागरी</span>
+        <span class="script-chip" style="--chip-color:#a12c7b" role="listitem">Romi</span>
+        <span class="script-chip" style="--chip-color:#437a22" role="listitem">ಕನ್ನಡ</span>
+        <span class="script-chip" style="--chip-color:#d19900" role="listitem">മലയാളം</span>
+        <span class="script-chip" style="--chip-color:#4b2614" role="listitem">نستعلیق</span>
+      </div>
+      <div class="hero__cta">
+        <a href="#timeline" class="btn btn--primary">Explore the timeline</a>
+        <a href="#map" class="btn btn--ghost">View the map</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY STATS STRIP -->
+  <section class="stat-strip" id="stats" aria-label="Key statistics">
+    <div class="stat-strip__inner">
+      <div class="stat-card">
+        <span class="stat-card__value" data-count="2256502">0</span>
+        <span class="stat-card__label">Konkani speakers, 2011 census</span>
+        <span class="stat-card__source"><a href="https://langlex.com/cens/LangProfile.php?lngname=KONKANI" target="_blank" rel="noopener">Census of India via Langlex</a></span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__value">7</span>
+        <span class="stat-card__label">Scripts historically used to write Konkani</span>
+        <span class="stat-card__source"><a href="https://en.wikipedia.org/wiki/Konkani_alphabets" target="_blank" rel="noopener">Konkani alphabets, Wikipedia</a></span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__value" data-count="500000">0</span>
+        <span class="stat-card__label">Roman-script (Romi) Konkani users</span>
+        <span class="stat-card__source"><a href="https://en.wikipedia.org/wiki/Konkani_in_the_Roman_script" target="_blank" rel="noopener">Konkani in the Roman script, Wikipedia</a></span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__value">1</span>
+        <span class="stat-card__label">Official script — Devanagari, since Goa's 1987 Act</span>
+        <span class="stat-card__source"><a href="https://prsindia.org/files/bills_acts/acts_states/goa/1987/1987GOA5.pdf" target="_blank" rel="noopener">Goa Official Language Act, 1987</a></span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__value">"Unsafe"</span>
+        <span class="stat-card__label">UNESCO endangerment status since 2009</span>
+        <span class="stat-card__source"><a href="https://en.wikipedia.org/wiki/Konkani_language" target="_blank" rel="noopener">Konkani language, Wikipedia</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section timeline-section" id="timeline">
+    <div class="section__header">
+      <p class="eyebrow">2nd century BC &mdash; present</p>
+      <h2 class="section__title">The timeline of shifting scripts</h2>
+      <p class="section__lead">Each band shows one script's lifespan; the brighter segment marks its period of peak influence. Click a band or catalyst marker to read the full story. Drag to pan, scroll or pinch to zoom.</p>
+    </div>
+
+    <div class="timeline-controls">
+      <div class="timeline-legend" id="timeline-legend" aria-label="Script legend"></div>
+      <div class="timeline-zoom">
+        <button type="button" class="btn btn--icon" data-zoom="out" aria-label="Zoom out">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M8 11h6"/></svg>
+        </button>
+        <button type="button" class="btn btn--icon" data-zoom="reset" aria-label="Reset zoom">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        </button>
+        <button type="button" class="btn btn--icon" data-zoom="in" aria-label="Zoom in">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="timeline-wrap">
+      <div class="timeline-scroll" id="timeline-scroll">
+        <svg id="timeline-svg" aria-label="Interactive timeline of Konkani scripts from 200 BC to present"></svg>
+      </div>
+    </div>
+
+    <div class="timeline-detail" id="timeline-detail" aria-live="polite">
+      <p class="timeline-detail__placeholder">Select a script band above, or a catalyst event, to see the full story here.</p>
+    </div>
+  </section>
+
+  <!-- MAP DASHBOARD -->
+  <section class="section map-section" id="map">
+    <div class="section__header">
+      <p class="eyebrow">Goa &middot; Karnataka &middot; Kerala &middot; Maharashtra</p>
+      <h2 class="section__title">Where each script is used today</h2>
+      <p class="section__lead">Markers show the script predominantly used for Konkani in each district or region right now. Filter by script, or click a marker for local detail.</p>
+    </div>
+
+    <div class="map-dashboard">
+      <aside class="map-sidebar">
+        <div class="map-filter-group">
+          <h3 class="map-sidebar__heading">Filter by script</h3>
+          <div class="map-filters" id="map-filters" role="group" aria-label="Filter map by script"></div>
+        </div>
+        <div class="map-legend-note">
+          <h3 class="map-sidebar__heading">Speaker distribution by state</h3>
+          <div class="census-bars" id="census-bars"></div>
+          <p class="map-source">Source: <a href="https://langlex.com/cens/LangProfile.php?lngname=KONKANI" target="_blank" rel="noopener">2011 Census of India</a></p>
+        </div>
+      </aside>
+      <div class="map-container">
+        <div id="konkani-map" role="application" aria-label="Map of Konkani script usage across Goa, Karnataka, Kerala and Maharashtra"></div>
+        <div class="map-popup-panel" id="map-popup-panel" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPT CARDS -->
+  <section class="section scripts-section" id="scripts">
+    <div class="section__header">
+      <p class="eyebrow">Script by script</p>
+      <h2 class="section__title">Communities, catalysts, and status today</h2>
+      <p class="section__lead">Every claim below is sourced. Expand a card to read the full history of peak influence, the communities who preserved it, the events that shifted usage, and where it stands now.</p>
+    </div>
+    <div class="script-cards" id="script-cards"></div>
+  </section>
+
+  <!-- METHODOLOGY / CAVEATS -->
+  <section class="section caveats-section">
+    <div class="section__header">
+      <p class="eyebrow">Reading the evidence</p>
+      <h2 class="section__title">Where the sources disagree</h2>
+      <p class="section__lead">Konkani's script history is contested territory — literally the subject of ongoing political disputes. These are the places where sources conflict, so you can weigh the claims yourself.</p>
+    </div>
+    <div class="caveats-grid">
+      <div class="caveat-card">
+        <h3>The 981 AD inscription</h3>
+        <p>Some scholars attribute the Shravanabelagola inscription to Konkani; many linguists read its language as indistinguishable from Old Marathi of the Yadava era (1200–1300 CE).</p>
+        <a href="https://en.wikipedia.org/wiki/Konkani_language" target="_blank" rel="noopener">Konkani language, Wikipedia →</a>
+      </div>
+      <div class="caveat-card">
+        <h3>The "1548 language ban"</h3>
+        <p>Often cited as when Portuguese authorities banned Konkani. The 1548 letter actually documents book destruction — the formal prohibition decree dates to 27 June 1684.</p>
+        <a href="https://en.wikipedia.org/wiki/Konkani_language_agitation" target="_blank" rel="noopener">Konkani language agitation, Wikipedia →</a>
+      </div>
+      <div class="caveat-card">
+        <h3>Six martyrs, or seven?</h3>
+        <p>Accounts of the 1986–87 script agitation name six Catholic victims in one telling, while Roman-script advocacy groups consistently speak of "seven martyrs."</p>
+        <a href="https://www.heraldgoa.in/goa/goa/global-romi-lipi-abhiyan-calls-officiallanguage-act-a-plot-against-roman-script/419001" target="_blank" rel="noopener">Herald Goa →</a>
+      </div>
+      <div class="caveat-card">
+        <h3>Inflated speaker estimates</h3>
+        <p>Community advocacy cites 3.7 million Konkani speakers in Karnataka and 1 million in Kerala — versus census figures of 788,294 and 69,449 respectively.</p>
+        <a href="https://www.outlookindia.com/society/tongue-in-a-twist-news-227761" target="_blank" rel="noopener">Outlook →</a>
+      </div>
+      <div class="caveat-card">
+        <h3>Is Perso-Arabic still used?</h3>
+        <p>One account says Perso-Arabic Konkani publishing ended roughly 50 years ago. But the fortnightly <em>Naqsh-e-Nawayath</em> has published continuously since 1976.</p>
+        <a href="https://twocircles.net/2017jun24/411956.html" target="_blank" rel="noopener">TwoCircles →</a>
+      </div>
+      <div class="caveat-card">
+        <h3>"A language in search of a script"</h3>
+        <p>This popular phrase couldn't be traced to any source. Closer sourced framings: K. V. Narayana called Konkani "probably the only scriptless Indian language which uses nearly half-a-dozen scripts."</p>
+        <a href="https://www.outlookindia.com/society/tongue-in-a-twist-news-227761" target="_blank" rel="noopener">Outlook →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Built as an independent research reference. Every historical and statistical claim links to its primary source — click through to verify.</p>
+    <p class="site-footer__meta">Data compiled from Wikipedia, Sahitya Akademi records, EPW, Navhind Times, Herald Goa, The Hindu, Outlook, and the 2011 Census of India, among others.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/map.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>

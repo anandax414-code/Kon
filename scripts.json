@@ -1,0 +1,306 @@
+{
+  "scripts": [
+    {
+      "id": "brahmi",
+      "name": "Brahmi",
+      "subtitle": "Goykanadi / Kandavi",
+      "color": "#a1662f",
+      "periodStart": -200,
+      "periodEnd": 1650,
+      "peakStart": 600,
+      "peakEnd": 1600,
+      "peakLabel": "6th – 16th century CE (Kadamba era Goykanadi)",
+      "status": "extinct",
+      "statusLabel": "Historical only — no living users",
+      "summary": "The ancestor script of the region. Early Brahmi and archaic Dravidian Brahmi inscriptions appear in Goa and the Konkan from the 2nd century BC. Its Kadamba-lineage descendant, Goykanadi (also called Kandavi), was Goa's own indigenous script for Konkani, used for commerce and administration until it was largely destroyed under Portuguese rule.",
+      "communities": [
+        {"name": "Trading Saraswat families", "note": "Used Goykanadi for commercial accounts and records"},
+        {"name": "Daivajna families", "note": "Kept mercantile ledgers in Goykanadi alongside Modi"}
+      ],
+      "catalysts": [
+        {"year": -200, "label": "2nd century BC", "text": "Earliest Brahmi and archaic Dravidian Brahmi inscriptions appear across Goa and the Konkan coast."},
+        {"year": 200, "label": "2nd century AD", "text": "First known Konkani inscription, at Arvalem, Goa: śacipurācē śirasi."},
+        {"year": 960, "label": "c. 960 CE", "text": "Kadamba dynasty rises; Goykanadi (Kandavi) script develops from the Kadamba Brahmi lineage."},
+        {"year": 1440, "label": "15th century", "text": "Earliest surviving Goykanadi document: a petition by Ravala Śeṭī."},
+        {"year": 1548, "label": "24 Nov 1548", "text": "Letter of João Afonso de Albuquerque documents Portuguese destruction of local-script manuscripts — the decisive blow against Goykanadi and other indigenous Goan scripts."},
+        {"year": 1600, "label": "17th century", "text": "Goykanadi loses popularity; Inquisition-era burnings destroy much of the remaining record."}
+      ],
+      "contemporary": "Purely historical and epigraphic today. No living writing community or speaker base. Scholarly recovery includes Gajanana Ghantkar's 1993 History of Goa through Goykanadi Script, and a Unicode encoding proposal has been raised for the script.",
+      "sources": [
+        {"label": "Konkani language, Wikipedia", "url": "https://en.wikipedia.org/wiki/Konkani_language"},
+        {"label": "Goykanadi, Wikipedia", "url": "https://en.wikipedia.org/wiki/Goykanadi"},
+        {"label": "Navhind Times, 'The revival of Modi-Marathi'", "url": "https://www.navhindtimes.in/2021/11/16/magazines/buzz/the-revival-of-modi-marathi/"}
+      ],
+      "regions": [
+        {"state": "Goa", "places": ["Arvalem", "Nageshi"], "note": "Epigraphic sites only"},
+        {"state": "Karnataka", "places": ["Shravanabelagola"], "note": "Epigraphic sites only"}
+      ]
+    },
+    {
+      "id": "modi",
+      "name": "Modi",
+      "subtitle": "Marathi administrative cursive",
+      "color": "#8a5b3a",
+      "periodStart": 1200,
+      "periodEnd": 1960,
+      "peakStart": 1600,
+      "peakEnd": 1818,
+      "peakLabel": "Shivaji era to end of Peshwa rule (c. 1600 – 1818)",
+      "status": "near-extinct",
+      "statusLabel": "Near-extinct — ~2 experts remain in Goa",
+      "summary": "Primarily a Marathi administrative script, Modi was 'sometimes' used for Konkani too. Its cursive form suited fast record-keeping and it flourished under Maratha state scribes (the Chitnisi tradition) through the Shivaji and Peshwa administrations, and was retained by Portuguese Goa's administration for Maratha-facing correspondence.",
+      "communities": [
+        {"name": "Trading Saraswat & Daivajna families", "note": "Used Modi alongside Goykanadi for accounts"},
+        {"name": "Maratha state scribes", "note": "Chitnisi tradition under Shivaji and the Peshwas"}
+      ],
+      "catalysts": [
+        {"year": 1600, "label": "17th century", "text": "Modi-Marathi officially used in Goa under Maratha/Bhonsle presence; Portuguese administration retains Modi translators."},
+        {"year": 1818, "label": "1818", "text": "End of Peshwa rule removes Modi's principal state sponsor."},
+        {"year": 1947, "label": "1947", "text": "Indian independence accelerates abandonment of Modi in favor of Devanagari for Marathi and Konkani alike."},
+        {"year": 2014, "label": "2014", "text": "Grassroots Modi revival movement begins in Pune."},
+        {"year": 2021, "label": "22 Nov 2021", "text": "One-month Modi-Marathi course launched at Sant Sohirobanath Government College, Pernem, Goa."}
+      ],
+      "contemporary": "Described as 'almost extinct' in Goa, with only two experts in the state. The Goa Archives holds land and temple records in Modi and mounted a 2022 exhibition of 16th–17th century Modi-Marathi documents. A Pune-based revival movement reported 400+ students by 2025 — but no Konkani-specific Modi publishing exists today.",
+      "sources": [
+        {"label": "Modi script, Wikipedia", "url": "https://en.wikipedia.org/wiki/Modi_script"},
+        {"label": "Navhind Times, 'The revival of Modi-Marathi'", "url": "https://www.navhindtimes.in/2021/11/16/magazines/buzz/the-revival-of-modi-marathi/"},
+        {"label": "Gomantak Times, Modi exhibition", "url": "https://www.gomantaktimes.com/my-goa/art-culture/visit-this-exhibition-to-know-about-goas-oldest-modi-marathi-documents"}
+      ],
+      "regions": [
+        {"state": "Goa", "places": ["Goa Archives", "Pernem"], "note": "Archival holdings; 1 revival course"},
+        {"state": "Maharashtra", "places": ["Pune"], "note": "Revival movement since 2014"}
+      ]
+    },
+    {
+      "id": "devanagari",
+      "name": "Devanagari",
+      "subtitle": "Nagari — the official script",
+      "color": "#01696f",
+      "periodStart": 950,
+      "periodEnd": 2026,
+      "peakStart": 1970,
+      "peakEnd": 2026,
+      "peakLabel": "1970s – present (official & academy-recognized)",
+      "status": "official",
+      "statusLabel": "Official script of Goa since 1987",
+      "summary": "Nagari use for Konkani traces back to a disputed 10th-century Shravanabelagola inscription and firmer 12th–17th century records. Krishnadas Shama's 16th-century Konkani Ramayana and Mahabharata survive in Nagari copies. After decades of Portuguese suppression created a script vacuum, the 20th-century 'eki' (unity) movement led by Shenoi Goembab built the modern Devanagari standard, which the Sahitya Akademi and the Government of Goa later enshrined as official.",
+      "communities": [
+        {"name": "Goud Saraswat Brahmins", "note": "Principal carriers of the Nagari literary tradition"},
+        {"name": "Allied Saraswat Hindu groups", "note": "Across Goa, Karnataka and Kerala"}
+      ],
+      "catalysts": [
+        {"year": 981, "label": "981 AD (disputed)", "text": "Shravanabelagola inscription — attributed to Konkani by some scholars (Kulkarni, Pereira), though many linguists read it as Old Marathi."},
+        {"year": 1187, "label": "1187", "text": "Mahavali/Aparaditya II inscription — earliest inscription with lines read as Devanagari Konkani."},
+        {"year": 1520, "label": "1520s", "text": "Krishnadas Shama composes a Konkani Ramayana and Mahabharata; surviving copies are in Nagari."},
+        {"year": 1684, "label": "27 Jun 1684", "text": "Portuguese viceroy Dom Francisco de Tavora decrees a ban on Konkani, urged by Franciscans — confirmed by the king in 1687, tightened through 1745 and 1759, and not lifted until 1910."},
+        {"year": 1818, "label": "1818", "text": "William Carey's Devanagari Konkani New Testament — first complete Konkani book in Nagari."},
+        {"year": 1910, "label": "1910", "text": "Shenoi Goembab publishes his first Nagari book, launching the 'eki' (unity) movement for a standard Konkani."},
+        {"year": 1939, "label": "8 Jul 1939", "text": "All India Konkani Parishad, Kumta: Mahdav Shanbague proposes Devanagari as the sole official Konkani script."},
+        {"year": 1962, "label": "Apr 1962", "text": "Jha Committee recommends Konkani as medium of instruction, in Nagari script if adopted."},
+        {"year": 1968, "label": "1968", "text": "Government of Kerala recognizes Konkani with Devanagari."},
+        {"year": 1970, "label": "22 Aug 1970", "text": "Goa CM Bandodkar declares Konkani in Devanagari official alongside Marathi."},
+        {"year": 1975, "label": "26 Feb 1975", "text": "Sahitya Akademi recognizes Konkani (in Devanagari) as an independent literary language."},
+        {"year": 1981, "label": "1981", "text": "Sahitya Akademi's Konkani Advisory Board unanimously recommends Nagari as the sole script."},
+        {"year": 1987, "label": "4 Feb 1987", "text": "Goa's Official Language Act passed: Konkani in Devanagari becomes the state's official language."},
+        {"year": 1992, "label": "1992", "text": "Konkani (Devanagari) added to the Eighth Schedule of the Indian Constitution."}
+      ],
+      "contemporary": "Devanagari is Konkani's sole officially recognized script — under Goa's 1987 Act and by the Government of India and Sahitya Akademi (reaffirmed 2024). Yet its position in education is fragile: Konkani-medium enrollment in Goa is just 8.8% of Class I–IV students (7,869 of 88,800), with ~300 government primary schools closed over a decade. In Kerala, the community deliberately switched from Malayalam to Nagari about 50 years ago.",
+      "sources": [
+        {"label": "Konkani language agitation, Wikipedia", "url": "https://en.wikipedia.org/wiki/Konkani_language_agitation"},
+        {"label": "Navhind Times, 'Konkani: the script and the reality'", "url": "https://www.navhindtimes.in/2024/09/01/magazines/panorama/konkani-the-script-and-the-reality/"},
+        {"label": "The Goan, Konkani-medium education decline", "url": "https://www.thegoan.net/goa-news/konkanimedium-education-in-decline-global-konknni-forum/149802.html"},
+        {"label": "Goa Act 5 of 1987 (PRS Legislative Research)", "url": "https://prsindia.org/files/bills_acts/acts_states/goa/1987/1987GOA5.pdf"}
+      ],
+      "regions": [
+        {"state": "Goa", "places": ["Statewide", "Antruz (standard dialect)"], "note": "Official language since 1987"},
+        {"state": "Maharashtra", "places": ["Konkan / Ratnagiri belt"], "note": "399,255 speakers"},
+        {"state": "Kerala", "places": ["Cochin/Ernakulam", "Alappuzha", "Kollam"], "note": "Switched from Malayalam ~1970s"}
+      ]
+    },
+    {
+      "id": "roman",
+      "name": "Roman",
+      "subtitle": "Romi Konkani",
+      "color": "#a12c7b",
+      "periodStart": 1556,
+      "periodEnd": 2026,
+      "peakStart": 1556,
+      "peakEnd": 1961,
+      "peakLabel": "1556 – 1961 (dominant before Goa's Liberation)",
+      "status": "active-contested",
+      "statusLabel": "~500,000 users — contests official status",
+      "summary": "Konkani's oldest continuously preserved literary tradition. Introduced through Jesuit missionary printing — Asia's first printing press was set up in Goa in 1556 — Roman-script Konkani dominated the language's literature until Goa's 1961 liberation. It remains the vehicle of Goan Catholic liturgy, tiatr (musical theatre), and a still-active weekly press, but was excluded from official status by the 1987 Act.",
+      "communities": [
+        {"name": "Goan Catholics / Goan Christians", "note": "25.10% of Goa's 2011 population; used in liturgy, tiatr, and print"},
+        {"name": "Mangalorean Catholics", "note": "Roman-script literary presence in coastal Karnataka"}
+      ],
+      "catalysts": [
+        {"year": 1556, "label": "1556", "text": "First Jesuit printing press in Asia established in Goa, seeding Roman-script Konkani literature."},
+        {"year": 1622, "label": "1622", "text": "Thomas Stephens publishes Doutrina Christam in Roman-script Konkani."},
+        {"year": 1640, "label": "1640", "text": "Thomas Stephens' Arte da Lingoa Canarim — foundational Konkani grammar in Roman script."},
+        {"year": 1889, "label": "1889", "text": "Fr Eduardo Bruno de Souza launches Udentechem Salok, first Konkani periodical, plus the first Konkani novel, Kristanv Ghorabo."},
+        {"year": 1933, "label": "4 Jan 1933", "text": "Vauraddeancho Ixtt weekly begins publication — still running, ~15,000 circulation, read in 50+ countries online."},
+        {"year": 1961, "label": "1961", "text": "Goa's Liberation from Portuguese rule — Roman script's dominant literary period ends as Devanagari gains ground."},
+        {"year": 1975, "label": "1975", "text": "Sahitya Akademi's single-script recognition excludes Roman-script writers from national awards despite the tradition's 1556 heritage."},
+        {"year": 1987, "label": "4 Feb 1987", "text": "Official Language Act omits Roman script — called a 'great betrayal' by Romi advocates."},
+        {"year": 2013, "label": "2013", "text": "Goa ordinance permits Roman script for some official communication, after a Bombay High Court PIL."},
+        {"year": 2024, "label": "4 Feb 2024", "text": "Global Romi Lipi Abhiyan holds symbolic protest on Official Language Day at Azad Maidan, Panjim."}
+      ],
+      "contemporary": "Roman-script Konkani has ~500,000 users. It receives partial institutional support — the Goa Konkani Akademi awards books in both Roman and Nagari, and the Dalgado Konknni Academy publishes exclusively in Roman script — but of 10 seats on the Sahitya Akademi's Konkani Advisory Board, only 1 traditionally represents Roman script. Tiatr (Goan musical theatre) produces roughly 300 shows a year, almost entirely in Romi Konkani. Active 2024–2025 campaigns continue to demand official recognition.",
+      "sources": [
+        {"label": "Konkani in the Roman script, Wikipedia", "url": "https://en.wikipedia.org/wiki/Konkani_in_the_Roman_script"},
+        {"label": "Vauraddeancho Ixtt, Wikipedia", "url": "https://en.wikipedia.org/wiki/Vauraddeancho_Ixtt"},
+        {"label": "Herald Goa, Global Romi Lipi Abhiyan", "url": "https://www.heraldgoa.in/goa/goa/global-romi-lipi-abhiyan-calls-officiallanguage-act-a-plot-against-roman-script/419001"},
+        {"label": "Christianity in Goa, Wikipedia", "url": "https://en.wikipedia.org/wiki/Christianity_in_Goa"}
+      ],
+      "regions": [
+        {"state": "Goa", "places": ["Salcete", "Bardez"], "note": "Goan Catholic heartland; ~500,000 users"},
+        {"state": "Diaspora", "places": ["Mumbai", "Gulf states"], "note": "Tiatr and print diaspora readership"}
+      ]
+    },
+    {
+      "id": "kannada",
+      "name": "Kannada",
+      "subtitle": "Coastal Karnataka's majority script",
+      "color": "#437a22",
+      "periodStart": 960,
+      "periodEnd": 2026,
+      "peakStart": 1883,
+      "peakEnd": 2026,
+      "peakLabel": "1883 – present (majority practice in coastal Karnataka)",
+      "status": "active-majority",
+      "statusLabel": "Majority script for Konkani in Karnataka today",
+      "summary": "Kannada was the Kadamba court language from c. 960–1310, and Kannada-script Konkani writing dates at least to a 1538 signature. Goan migrant families who resettled in Karnataka after 1540 initially kept Nagari, but over generations lost contact with it and assimilated to the locally literate Kannada script — a shift documented in Fr Maffei's 1883 Konkani grammar and dictionary.",
+      "communities": [
+        {"name": "Gaud Saraswat & Rajapur Saraswat Brahmins", "note": "South & North Canara"},
+        {"name": "Chitrapur Saraswats", "note": "South Canara"},
+        {"name": "Kudubis, Kharvis, Bhandaris, Daivadnya, Gabits", "note": "North & South Canara communities"},
+        {"name": "Mangalorean Catholics", "note": "Church literature circulates in ~165 churches"}
+      ],
+      "catalysts": [
+        {"year": 960, "label": "c. 960–1310", "text": "Kadambas rule Goa and coastal Karnataka with Kannada as court language."},
+        {"year": 1538, "label": "1538", "text": "Earliest known Kannada-script Konkani signature, by the first knighted Goan."},
+        {"year": 1540, "label": "post-1540", "text": "Goan migrant families settle in Karnataka following Portuguese-era displacement, initially retaining Nagari."},
+        {"year": 1740, "label": "18th–19th c.", "text": "Later migrant generations lose contact with Nagari over 'a century or two' and shift to the locally literate Kannada script."},
+        {"year": 1883, "label": "1883", "text": "Fr A. F. X. Maffei's Konkani grammar and dictionary record that 'the Kanarese alphabet is now generally used'."},
+        {"year": 2007, "label": "2007-08", "text": "Karnataka introduces Konkani as optional third language (Kannada or Devanagari script) in Dakshina Kannada, Udupi and Uttara Kannada."},
+        {"year": 2024, "label": "Sep 2024", "text": "Global Konknni Forum and Mandd Sobhann protest Sahitya Akademi's reaffirmed Devanagari-only policy at Mangaluru symposium."}
+      ],
+      "contemporary": "The majority practice among Konkani speakers in Karnataka. A Karnataka Konkani Sahitya Academy consultation found 44 of 67 respondents preferred Kannada script versus 19 for Devanagari and 2 for Roman; 88% of students, teachers and parents across 102 surveyed schools endorsed Kannada. Roughly 40 Kannada-script Konkani books were published in a single recent year (2004). 15% of Dakshina Kannada district's population speaks Konkani.",
+      "sources": [
+        {"label": "Outlook, 'Tongue In A Twist'", "url": "https://www.outlookindia.com/society/tongue-in-a-twist-news-227761"},
+        {"label": "Southern Saraswat Konkani, Wikipedia", "url": "https://en.wikipedia.org/wiki/Southern_Saraswat_Konkani"},
+        {"label": "The Hindu, Konkani academics in Karnataka", "url": "https://www.thehindu.com/news/national/karnataka/kannada-rajyotsava-konkani-tulu-and-kodava-find-place-in-academics-but-there-arent-many-takers-for-such-courses/article67496873.ece"},
+        {"label": "Navhind Times, 'Konkani: the script and the reality'", "url": "https://www.navhindtimes.in/2024/09/01/magazines/panorama/konkani-the-script-and-the-reality/"}
+      ],
+      "regions": [
+        {"state": "Karnataka", "places": ["Dakshina Kannada", "Udupi", "Uttara Kannada"], "note": "Majority script; 15% of Dakshina Kannada speaks Konkani"},
+        {"state": "Kerala", "places": ["Kasaragod"], "note": "Historically part of South Canara"}
+      ]
+    },
+    {
+      "id": "malayalam",
+      "name": "Malayalam",
+      "subtitle": "Kerala's residual Konkani script",
+      "color": "#d19900",
+      "periodStart": 1675,
+      "periodEnd": 2026,
+      "peakStart": 1800,
+      "peakEnd": 1975,
+      "peakLabel": "Late 18th – mid/late 20th century",
+      "status": "residual",
+      "statusLabel": "Residual — largely superseded by Devanagari since the 1970s",
+      "summary": "Konkani migrants who settled in Kerala initially wrote in Nagari — still evident in a 1675 testimonial — but later generations adopted the locally dominant Malayalam script as literacy assimilated to their new environment. About 50 years ago the community made a deliberate, organized reversal back to Devanagari, though pockets of Malayalam-script publishing persist.",
+      "communities": [
+        {"name": "Kudumbis", "note": "Concentrated in Cochin/Ernakulam and Alappuzha; publish the Marg Deepam monthly"},
+        {"name": "Gaud Saraswats, Vaishya Vani, Daivajna groups", "note": "Bilingual in Malayalam, across Kochi, Alappuzha, Kollam, Kottayam"}
+      ],
+      "catalysts": [
+        {"year": 1675, "label": "1669–1676", "text": "Hortus Malabaricus testimonial by Cochin pandits shows Nagari still in active use among Kerala's Konkani community."},
+        {"year": 1800, "label": "18th–19th c.", "text": "Later generations assimilate to Malayalam literacy, gradually adopting the Malayalam script for Konkani."},
+        {"year": 1968, "label": "1968", "text": "Government of Kerala recognizes Konkani with Devanagari, reinforcing a shift already underway."},
+        {"year": 1975, "label": "c. 1975", "text": "Kerala Konkani community makes a deliberate, organized decision to use Nagari instead of Malayalam for books and periodicals."},
+        {"year": 2012, "label": "2012", "text": "A Kerala meeting urges renewed publishing in Malayalam script, citing UNESCO's endangerment classification and community estimates far above census counts."}
+      ],
+      "contemporary": "Residual but not extinct. The Kudumbi monthly Marg Deepam (Malayalam script) claims 4,000 circulation. A handwritten bi-monthly, The Konkani, was produced in Malayalam script by R. Ranganath Prabhu of Purakkad. The Kerala Konkani Academy has published Malayalam-Konkani reference works. A 2024 survey nonetheless excludes Malayalam from Konkani's currently active scripts. Kerala's 2011 census Konkani total is 69,449.",
+      "sources": [
+        {"label": "Navhind Times, 'Konkani: the script and the reality'", "url": "https://www.navhindtimes.in/2024/09/01/magazines/panorama/konkani-the-script-and-the-reality/"},
+        {"label": "Southern Saraswat Konkani, Wikipedia", "url": "https://en.wikipedia.org/wiki/Southern_Saraswat_Konkani"},
+        {"label": "Kudumbi community site", "url": "http://kudumbi.weebly.com/population.html"},
+        {"label": "Langlex census profile", "url": "https://langlex.com/cens/LangProfile.php?lngname=KONKANI"}
+      ],
+      "regions": [
+        {"state": "Kerala", "places": ["Kochi/Ernakulam", "Alappuzha (Purakkad)", "Kollam", "Kottayam", "Kasaragod"], "note": "Kudumbi and allied Konkani communities"}
+      ]
+    },
+    {
+      "id": "persoarabic",
+      "name": "Perso-Arabic",
+      "subtitle": "Nawayathi Konkani",
+      "color": "#4b2614",
+      "periodStart": 1690,
+      "periodEnd": 2026,
+      "peakStart": 1690,
+      "peakEnd": 1919,
+      "peakLabel": "Late 17th century – 1919",
+      "status": "vestigial",
+      "statusLabel": "Vestigial — single surviving fortnightly publication",
+      "summary": "Nawayathi is Konkani overlaid with Persian, Arabic and Marathi elements, spoken by the Nawayath (Navayat) Muslim community, descended from Goan migrants who intermarried with Arab traders in coastal Karnataka. It was written in Persian/Perso-Arabic script from the outset, comparable in tradition to Arabi-Malayalam and Arwi.",
+      "communities": [
+        {"name": "Nawayaths of Bhatkal", "note": "Bhatkal: ~32,000 population, ~75% Muslim, majority Nawayath"},
+        {"name": "Konkani Muslims of Ratnagiri (Daldi)", "note": "Coastal Maharashtra"},
+        {"name": "Jamayti community", "note": "Related Konkani Muslim group"}
+      ],
+      "catalysts": [
+        {"year": 1540, "label": "16th century", "text": "Goan migrants to coastal Karnataka intermarry with Arab traders, giving rise to the Nawayath community and their Perso-Arabic-influenced Konkani."},
+        {"year": 1690, "label": "late 17th c.", "text": "Nawayathi begins to be written consistently in Persian/Perso-Arabic script."},
+        {"year": 1919, "label": "1919", "text": "Founding of the Anjuman Hami-e-Muslimeen, which chooses Urdu as the community's language of education — relegating Nawayathi to home use only, not taught in schools."},
+        {"year": 1976, "label": "1976", "text": "Fortnightly Naqsh-e-Nawayath launched — the principal surviving vehicle for the script, still in print."},
+        {"year": 2019, "label": "2019", "text": "A preservation initiative adds three characters to the script and produces a prototype keyboard."}
+      ],
+      "contemporary": "The fortnightly Naqsh-e-Nawayath (founded 1976, relocated to Bhatkal 1996) remains the principal surviving vehicle, printing roughly 3,000 copies of 16 pages per issue. Revival efforts include the Nawayath Mehfil cultural body and the community's first formal dictionary and grammar. Sources disagree sharply: one account holds that Perso-Arabic Konkani publishing ended roughly 50 years ago, while Naqsh-e-Nawayath's continuous run since 1976 directly contradicts that. No official status exists for the script.",
+      "sources": [
+        {"label": "TwoCircles, Nawayathi language feature", "url": "https://twocircles.net/2017jun24/411956.html"},
+        {"label": "Mashallah News, 'Arabic script in India'", "url": "https://www.mashallahnews.com/language/arabic-script-india.html"},
+        {"label": "Nawayathi language, Wikipedia", "url": "https://en.wikipedia.org/wiki/Nawayathi_language"},
+        {"label": "Bhatkal, Wikipedia", "url": "https://en.wikipedia.org/wiki/Bhatkal"}
+      ],
+      "regions": [
+        {"state": "Karnataka", "places": ["Bhatkal", "Uttara Kannada"], "note": "Nawayath Muslim community; ~32,000 pop., ~75% Muslim"},
+        {"state": "Maharashtra", "places": ["Ratnagiri", "Raigad"], "note": "Daldi Konkani Muslim community"}
+      ]
+    }
+  ],
+  "censusData": {
+    "total2011": 2256502,
+    "total2001": 2489016,
+    "byState": [
+      {"state": "Goa", "speakers": 964305, "lat": 15.2993, "lng": 74.1240, "primaryScripts": ["devanagari", "roman"]},
+      {"state": "Karnataka", "speakers": 788294, "lat": 13.3409, "lng": 74.7421, "primaryScripts": ["kannada", "persoarabic"]},
+      {"state": "Maharashtra", "speakers": 399255, "lat": 17.0, "lng": 73.3, "primaryScripts": ["devanagari", "modi"]},
+      {"state": "Kerala", "speakers": 69449, "lat": 9.9816, "lng": 76.2999, "primaryScripts": ["malayalam", "devanagari"]},
+      {"state": "Dadra & Nagar Haveli", "speakers": 7756, "lat": 20.1809, "lng": 73.0169, "primaryScripts": ["devanagari"]},
+      {"state": "Odisha", "speakers": 7587, "lat": 20.9517, "lng": 85.0985, "primaryScripts": ["devanagari"]},
+      {"state": "Tamil Nadu", "speakers": 6098, "lat": 11.1271, "lng": 78.6569, "primaryScripts": ["devanagari"]},
+      {"state": "Gujarat", "speakers": 5092, "lat": 22.2587, "lng": 71.1924, "primaryScripts": ["devanagari"]}
+    ],
+    "romanUsers": 500000,
+    "goaShareOfKonkaniPopulation": 30.93,
+    "source": "https://langlex.com/cens/LangProfile.php?lngname=KONKANI"
+  },
+  "mapMarkers": [
+    {"id": "goa-statewide", "name": "Goa (statewide)", "state": "Goa", "lat": 15.2993, "lng": 74.1240, "script": "devanagari", "detail": "Official script under the 1987 Act; Antruz-based Standard Konkani"},
+    {"id": "salcete", "name": "Salcete", "state": "Goa", "lat": 15.2, "lng": 73.95, "script": "roman", "detail": "Goan Catholic heartland; Romi Konkani, tiatr theatre"},
+    {"id": "bardez", "name": "Bardez", "state": "Goa", "lat": 15.57, "lng": 73.82, "script": "roman", "detail": "Goan Catholic community; Roman-script literature and liturgy"},
+    {"id": "dakshina-kannada", "name": "Dakshina Kannada (Mangaluru)", "state": "Karnataka", "lat": 12.9141, "lng": 74.8560, "script": "kannada", "detail": "15% of district speaks Konkani; majority write in Kannada script"},
+    {"id": "udupi", "name": "Udupi", "state": "Karnataka", "lat": 13.3409, "lng": 74.7421, "script": "kannada", "detail": "GSB, Chitrapur Saraswat communities; Kannada-script Konkani schooling since 2007"},
+    {"id": "uttara-kannada", "name": "Uttara Kannada", "state": "Karnataka", "lat": 14.7935, "lng": 74.6869, "script": "kannada", "detail": "North Canara Konkani communities; Kannada script majority"},
+    {"id": "bhatkal", "name": "Bhatkal", "state": "Karnataka", "lat": 13.9853, "lng": 74.5535, "script": "persoarabic", "detail": "Nawayath Muslim community (~32,000 pop., ~75% Muslim); Naqsh-e-Nawayath fortnightly"},
+    {"id": "kochi", "name": "Kochi / Ernakulam", "state": "Kerala", "lat": 9.9816, "lng": 76.2999, "script": "malayalam", "detail": "Kudumbi community; Marg Deepam monthly in Malayalam script"},
+    {"id": "alappuzha", "name": "Alappuzha (Purakkad)", "state": "Kerala", "lat": 9.4981, "lng": 76.3388, "script": "malayalam", "detail": "Handwritten bi-monthly 'The Konkani' produced in Malayalam script"},
+    {"id": "kollam", "name": "Kollam", "state": "Kerala", "lat": 8.8932, "lng": 76.6141, "script": "devanagari", "detail": "Community switched from Malayalam to Devanagari ~50 years ago"},
+    {"id": "kasaragod", "name": "Kasaragod", "state": "Kerala", "lat": 12.4996, "lng": 74.9869, "script": "kannada", "detail": "Historically part of South Canara; Kannada-script influence persists"},
+    {"id": "ratnagiri", "name": "Ratnagiri", "state": "Maharashtra", "lat": 16.9902, "lng": 73.3120, "script": "devanagari", "detail": "Konkan coast Devanagari Konkani; Daldi Konkani Muslim community (Perso-Arabic history)"},
+    {"id": "pune", "name": "Pune", "state": "Maharashtra", "lat": 18.5204, "lng": 73.8567, "script": "modi", "detail": "Modi script revival movement since 2014"}
+  ]
+}
